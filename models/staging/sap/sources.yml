@@ -7,7 +7,7 @@ sources:
     database: equatorial
     schema: raw_northwind
     tables:
-      - name: product
+      - name: products
         columns:
           - name: id
             tests:

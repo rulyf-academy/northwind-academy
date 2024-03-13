@@ -1,12 +1,12 @@
 with
     fonte_produtos as (
         select *
-        from {{ source('sap', 'product') }}
+        from {{ source('sap', 'products') }}
     )
 
     , renomear as (
         select
-            cast(ID as int) as id_produto
+            cast(ID as int) as pk_produto
             , cast(PRODUCTNAME as string) as nm_produto
             , cast(SUPPLIERID as int) as fk_fornecedor 
             , cast(CATEGORYID as int) as fk_categoria

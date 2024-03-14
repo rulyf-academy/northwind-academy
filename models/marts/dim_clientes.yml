@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_clientes
+    columns:
+      - name: pk_cliente
+        description: Chave primária da tabela dim_clientes
+        tests:
+          - unique 
+          - not_null

@@ -15,3 +15,7 @@ sources:
               - not_null               
       - name: category
       - name: supplier
+      - name: orders
+      - name: orders_details
+      - name: employee
+      - name: customer

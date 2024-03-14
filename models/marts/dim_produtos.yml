@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: dim_produtos
+    description: Dimensão de produtos da northwind. Um produto por linha.
+    columns:
+      - name: pk_produto
+        description: Chave primária da tabela dim_produtos.
+        tests:
+          - unique 
+          - not_null
+      
+      - name: fk_fornecedor
+        description: Chave estrangeira da tabela de fornecedores.
+
+      - name: fk_categoria
+        description: Chave estrangeira da tabela de categorias.
+
+      - name: nm_produto
+        description: <Falta Completar>
+
+      - name: preco_por_unidade
+        description: <Falta Completar>
+      
+      - name: is_discontinuado
+        description: <Falta Completar>
+
+      - name: nm_fornecedor
+        description: <Falta Completar>
+
+      - name: pais_fornecedor
+        description: <Falta Completar>
+      
+      - name: nm_categoria
+        description: <Falta Completar>

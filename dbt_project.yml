@@ -40,11 +40,9 @@ models:
     # Applies to all files under models/example/
     marts:
       +materialized: table
+      +schema: marts
 
     staging:
-      
+      +schema: staging
       sap:
         +materialized: table
-
-        
-
